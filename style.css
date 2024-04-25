@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #393E46;
+}
+
+.head {
+    background-color: #222831;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.head p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393E46;
+    width: 100%;
+    height: auto;
+}
+
+.rings {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.rings .btn {
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    padding: .8rem;
+    border-radius: 5rem;
+    background-color: #526D82;
+    font-weight: 500;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 20px 15px #222831;
+    transition: all ease-in-out 0.2s;
+    color:aliceblue;
+}
+
+.rings .btn:hover {
+    background-color: #90acd4;
+    box-shadow: 1px 1px 20px 4px rgb(128, 168, 172);
+    font-size: 1.55rem;
+}
+
+.rings a {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #526D82;
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: .8rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 20px 15px #222831;
+    transition: all ease-in 0.2s;
+    color:aliceblue;
+}
+
+.rings a:hover {
+    background-color: #90acd4;
+    box-shadow: 1px 1px 20px 4px rgb(128, 168, 172);
+    font-size: 1.55rem;
+}
+
+.content2 {
+    padding: 10px;
+    background-color: #393E46;
+}
+
+#message {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 630px;
+    min-height: 88px;
+    margin: auto;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#towers {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#towers ul {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    min-width: 150px;
+    padding: 0;
+    margin: 0rem 10rem;
+    border-bottom: 4px rgb(110, 114, 106) solid;
+    list-style: none;
+    transition: opacity 0.1s ease-in-out;
+}
+
+#towers ul:before {
+    content: "";
+    background-color: rgb(106, 109, 114);
+    position: absolute;
+    width: .3rem;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#towers li {
+    display: block;
+    z-index: 19;
+    height: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: rgb(124, 124, 124);
+    position: relative;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 12rem;
+    padding: 20px 0;
+    gap: 2rem;
+    margin: 20px auto;
+}
+
+#buttons div {
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 20px 30px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+#buttons div.clickable {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+}
+
+#buttons .solve {
+    background-color: rgb(104, 94, 150);
+    box-shadow: 1px 1px 10px 10px grey;
+    transition: all ease-in 0.2s;
+}
+
+#buttons .solve:hover {
+    background-color: rgb(133, 146, 192);
+    box-shadow: 1px 1px 10px 10px rgb(83, 83, 83);
+}
+
+#buttons .restart {
+    background-color: rgb(184, 150, 99);
+    box-shadow: 1px 1px 10px 10px grey;
+    transition: all ease-in 0.2s;
+}
+
+#buttons .restart:hover {
+    background-color: rgb(204, 188, 135);
+    box-shadow: 1px 1px 10px 10px rgb(83, 83, 83);
+}
+
+#buttons div.clickable:hover {
+    padding: 20px 20px;
+    font-weight: 600;
+}
+
+#buttons div.clickable:active {
+    opacity: 1;
+}

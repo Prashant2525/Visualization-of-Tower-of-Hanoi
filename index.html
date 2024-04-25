@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <p>Visualization of Tower of Hanoi</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="content1">
+            <div class="rings">
+                <button class="btn" onclick="enter()">Enter number of rings</button>
+                <a href="index.html">Reset Tower</a>
+            </div>
+        </div>
+
+        <div class="content2">
+            <div id="towers">
+                <ul class="tower" data-tower="0"></ul>
+                <ul class="tower" data-tower="1"></ul>
+                <ul class="tower" data-tower="2"></ul>
+            </div>
+            <div id="message"></div>
+            <div id="buttons">
+                <div class="solve">Start</div>
+                <div class="restart">Restart</div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
